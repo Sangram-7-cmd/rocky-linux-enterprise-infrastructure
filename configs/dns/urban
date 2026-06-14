@@ -1,0 +1,11 @@
+$TTL 1D
+@	IN SOA ns1.urban.com. admin.urban.com. (
+					0	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+            	NS	ns1.urban.com.
+                MX  10  mail.urban.com.
+ns1	        A	10.0.0.1
+mail            A       192.168.1.10
