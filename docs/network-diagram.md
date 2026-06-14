@@ -18,8 +18,6 @@ Internet
     │       ├── HTTP     (Apache — port 80)
     │       ├── HTTPS    (Apache + SSL — port 443)
     │       ├── NFS      (nfs-server — port 2049)
-    │       ├── Samba    (smbd — ports 139, 445)
-    │       ├── NIS      (ypserv — port 111)
     │       ├── SMTP     (Postfix — port 25)
     │       └── SSH      (OpenSSH — port 22)
     │
