@@ -175,52 +175,7 @@ mount -t nfs 192.168.1.10:/srv/nfs/shared /mnt/nfs
 
 ---
 
-## Step 8 — Samba Server
-
-Installed Samba:
-```bash
-dnf install samba samba-client -y
-```
-
-Configured /etc/samba/smb.conf with shared directory.
-
-Created Samba user:
-```bash
-smbpasswd -a username
-```
-
-Opened firewall:
-```bash
-firewall-cmd --permanent --add-service=samba
-firewall-cmd --reload
-```
-
-Verified from Windows client via \\192.168.1.10\sharename
-
----
-
-## Step 9 — NIS Server
-
-Installed NIS packages:
-```bash
-dnf install ypserv yp-tools ypbind -y
-```
-
-Set NIS domain:
-```bash
-nisdomainname lab.local
-```
-
-Initialized NIS database:
-```bash
-/usr/lib64/yp/ypinit -m
-```
-
-Configured clients to bind to NIS server.
-
----
-
-## Step 10 — Autofs
+## Step 8 — Autofs
 
 Installed autofs:
 ```bash
@@ -246,7 +201,7 @@ Verified: accessing /mnt/auto/shared triggered automatic mount.
 
 ---
 
-## Step 11 — Mail Server (Postfix)
+## Step 9 — Mail Server (Postfix)
 
 Installed Postfix:
 ```bash
@@ -277,7 +232,7 @@ firewall-cmd --reload
 
 ---
 
-## Step 12 — FTP Server (vsftpd)
+## Step 10 — FTP Server (vsftpd)
 
 Installed vsftpd on Server 2:
 ```bash
@@ -300,7 +255,7 @@ firewall-cmd --reload
 
 ---
 
-## Step 13 — Backup System
+## Step 11 — Backup System
 
 Created backup script on Server 1 at /opt/scripts/backup.sh
 
@@ -319,7 +274,7 @@ Set up passwordless SSH from Server 1 root to Server 2 root.
 
 ---
 
-## Step 14 — External Backup
+## Step 12 — External Backup
 
 Added a second virtual disk to Server 2 in VMware (20GB).
 
@@ -342,7 +297,7 @@ Updated backup script to send to both locations:
 
 ---
 
-## Step 15 — Disk Quota (XFS)
+## Step 13 — Disk Quota (XFS)
 
 /home was already on its own LVM partition (xfs).
 
@@ -373,7 +328,7 @@ dd if=/dev/zero of=/home/testuser/testfile bs=1M count=1100
 
 ---
 
-## Step 16 — DHCP Server
+## Step 14 — DHCP Server
 
 Installed dhcp-server on Server 2:
 ```bash
