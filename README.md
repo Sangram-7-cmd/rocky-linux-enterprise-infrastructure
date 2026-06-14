@@ -36,7 +36,6 @@ simulating a real-world enterprise environment across 5 virtual machines.
 | DNS        | BIND9   | 4 zones: urban.com, rural.com, web1.local, web2.local |
 | Web        | Apache  | 5 virtual hosts — 3 HTTP, 2 HTTPS with mod_ssl        |
 | File Share | NFS     | Shared directories mounted on Linux clients            |
-| Auth       | NIS     | Centralized user authentication across all machines    |
 | Mail       | Postfix | Two domains, inter-server delivery via DNS MX          |
 | Autofs     | autofs  | Automatic NFS mount on client access                   |
 | SSH        | OpenSSH | Key-based auth, hardened sshd_config                   |
