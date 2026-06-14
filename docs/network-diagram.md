@@ -30,17 +30,17 @@ Internet
     │       ├── SSH      (OpenSSH — port 22)
     │       └── Backup   (rsync receiver from Server 1)
     │
-    ├── 192.168.1.101  CLIENT 1 (Rocky Linux)
+    ├── 192.168.1.102  CLIENT 1 (Rocky Linux)
     │       ├── Mounts NFS from Server 1
     │       ├── Authenticates via NIS (Server 1)
     │       ├── Autofs mounts on demand
     │       └── Receives DHCP from Server 2
     │
-    ├── 192.168.1.102  CLIENT 2 (Ubuntu)
+    ├── 192.168.1.104  CLIENT 2 (Ubuntu)
     │       ├── Mounts NFS from Server 1
     │       └── Uses Server 1 as DNS
     │
-    └── 192.168.1.103  CLIENT 3 (Windows)
+    └── 192.168.1.106  CLIENT 3 (Windows)
             └── Accesses Samba share on Server 1
 
 DHCP Pool: 192.168.1.150 — 192.168.1.200
