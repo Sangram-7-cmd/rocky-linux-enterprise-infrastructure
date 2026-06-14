@@ -75,7 +75,7 @@ rural.com
 ## Mail Flow
 
 ```
-Client (192.168.1.101)
+Client (192.168.1.102)
         │
         │  sends to user@rural.com
         │  connects to Server 1 port 25
