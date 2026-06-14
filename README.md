@@ -21,9 +21,9 @@ simulating a real-world enterprise environment across 5 virtual machines.
 |----------|-------------|----------------|-----------------------------------|
 | Server 1 | Rocky Linux | 192.168.1.10   | DNS, Web, NFS, Samba, Mail, NIS   |
 | Server 2 | Rocky Linux | 192.168.1.20   | FTP, DHCP, Backup, Disk Quota     |
-| Client 1 | Rocky Linux | 192.168.1.101  | Linux Client                      |
-| Client 2 | Ubuntu      | 192.168.1.102  | Linux Client                      |
-| Client 3 | Windows     | 192.168.1.103  | Windows Client                    |
+| Client 1 | Rocky Linux | 192.168.1.102  | Linux Client                      |
+| Client 2 | Ubuntu      | 192.168.1.104  | Linux Client                      |
+| Client 3 | Windows     | 192.168.1.107  | Windows Client                    |
 
 ---
 
