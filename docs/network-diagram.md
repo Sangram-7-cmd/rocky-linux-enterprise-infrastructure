@@ -38,7 +38,7 @@ Internet
     │       ├── Mounts NFS from Server 1
     │       └── Uses Server 1 as DNS
     │
-    └── 192.168.1.106  CLIENT 3 (Windows)
+    └── 192.168.1.107  CLIENT 3 (Windows)
             └── Accesses Samba share on Server 1
 
 DHCP Pool: 192.168.1.150 — 192.168.1.200
