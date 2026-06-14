@@ -1,0 +1,27 @@
+User quota state on /home (/dev/mapper/rl-home)
+  Accounting: ON
+  Enforcement: ON
+  Inode: #144 (2 blocks, 2 extents)
+Blocks grace time: [7 days]
+Blocks max warnings: 0
+Inodes grace time: [7 days]
+Inodes max warnings: 0
+Realtime Blocks grace time: [7 days]
+Group quota state on /home (/dev/mapper/rl-home)
+  Accounting: OFF
+  Enforcement: OFF
+  Inode: N/A
+Blocks grace time: [--------]
+Blocks max warnings: 0
+Inodes grace time: [--------]
+Inodes max warnings: 0
+Realtime Blocks grace time: [--------]
+Project quota state on /home (/dev/mapper/rl-home)
+  Accounting: OFF
+  Enforcement: OFF
+  Inode: N/A
+Blocks grace time: [--------]
+Blocks max warnings: 0
+Inodes grace time: [--------]
+Inodes max warnings: 0
+Realtime Blocks grace time: [--------]

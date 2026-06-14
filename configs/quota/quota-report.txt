@@ -1,0 +1,14 @@
+User quota on /home (/dev/mapper/rl-home)
+                        Blocks              
+User ID      Used   Soft   Hard Warn/Grace   
+---------- --------------------------------- 
+root         104K      0      0  00 [------]
+sanju        352K      0      0  00 [------]
+test1         12K      0      0  00 [------]
+testuser      16K   800M     1G  00 [------]
+ansibleuser    12K      0      0  00 [------]
+developer1    12K      0      0  00 [------]
+developer2    12K      0      0  00 [------]
+#1006         12K      0      0  00 [------]
+devops        12K      0      0  00 [------]
+

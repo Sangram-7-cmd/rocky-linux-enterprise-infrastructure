@@ -1,0 +1,12 @@
+$TTL 1D
+@	IN SOA ns1.web1.local. admin.web1.local. (
+					0	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+            	NS	ns1.web1.local.
+ns1	        A	10.0.0.1
+dashboard	A       192.168.1.10
+portfolio       A       192.168.1.10
+devops          A       192.168.1.10
