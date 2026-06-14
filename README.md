@@ -12,9 +12,9 @@ simulating a real-world enterprise environment across 5 virtual machines.
 │
 ├── 192.168.1.10   Server 1  →  DNS, Web, NFS, Samba, Mail, NIS, Autofs
 ├── 192.168.1.20   Server 2  →  FTP, DHCP, Backup
-├── 192.168.1.101  Client 1  →  Rocky Linux Client
-├── 192.168.1.102  Client 2  →  Ubuntu Client
-└── 192.168.1.103  Client 3  →  Windows Client
+├── 192.168.1.102  Client 1  →  Rocky Linux Client
+├── 192.168.1.104  Client 2  →  Ubuntu Client
+└── 192.168.1.107  Client 3  →  Windows Client
 ```
 
 | Machine  | OS          | IP             | Role                              |
@@ -69,7 +69,6 @@ linux-infrastructure-lab/
 │   ├── nfs/                    ← /etc/exports
 │   ├── dhcp/                   ← dhcpd.conf
 │   ├── ftp/                    ← vsftpd.conf
-│   ├── nis/                    ← NIS setup notes
 │   ├── autofs/                 ← auto.master + map files
 │   └── ssh/                    ← sshd_config
 └── docs/
@@ -105,13 +104,6 @@ linux-infrastructure-lab/
 - `scripts/backup.sh` is the full working backup automation script
 
 ---
-
-## What's Next
-
-- FreeIPA — production replacement for NIS
-- Ansible — automate the entire infrastructure setup
-- Docker — containerize web services
-- Git-based config management
 
 ---
 
