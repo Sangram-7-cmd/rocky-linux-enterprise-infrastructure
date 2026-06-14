@@ -12,9 +12,9 @@ simulating a real-world enterprise environment across 5 virtual machines.
 │
 ├── 192.168.1.10   Server 1  →  DNS, Web, NFS, Samba, Mail, NIS, Autofs
 ├── 192.168.1.20   Server 2  →  FTP, DHCP, Backup
-├── 192.168.1.101  Client 1  →  Rocky Linux Client
-├── 192.168.1.102  Client 2  →  Ubuntu Client
-└── 192.168.1.103  Client 3  →  Windows Client
+├── 192.168.1.102  Client 1  →  Rocky Linux Client
+├── 192.168.1.104  Client 2  →  Ubuntu Client
+└── 192.168.1.107  Client 3  →  Windows Client
 ```
 
 | Machine  | OS          | IP             | Role                              |
@@ -36,8 +36,6 @@ simulating a real-world enterprise environment across 5 virtual machines.
 | DNS        | BIND9   | 4 zones: urban.com, rural.com, web1.local, web2.local |
 | Web        | Apache  | 5 virtual hosts — 3 HTTP, 2 HTTPS with mod_ssl        |
 | File Share | NFS     | Shared directories mounted on Linux clients            |
-| File Share | Samba   | Shared directories accessible from Windows client      |
-| Auth       | NIS     | Centralized user authentication across all machines    |
 | Mail       | Postfix | Two domains, inter-server delivery via DNS MX          |
 | Autofs     | autofs  | Automatic NFS mount on client access                   |
 | SSH        | OpenSSH | Key-based auth, hardened sshd_config                   |
@@ -69,7 +67,6 @@ linux-infrastructure-lab/
 │   ├── nfs/                    ← /etc/exports
 │   ├── dhcp/                   ← dhcpd.conf
 │   ├── ftp/                    ← vsftpd.conf
-│   ├── nis/                    ← NIS setup notes
 │   ├── autofs/                 ← auto.master + map files
 │   └── ssh/                    ← sshd_config
 └── docs/
@@ -105,13 +102,6 @@ linux-infrastructure-lab/
 - `scripts/backup.sh` is the full working backup automation script
 
 ---
-
-## What's Next
-
-- FreeIPA — production replacement for NIS
-- Ansible — automate the entire infrastructure setup
-- Docker — containerize web services
-- Git-based config management
 
 ---
 
